@@ -1,0 +1,16 @@
+[tasks.my_task]
+script = [
+    "echo hello"
+]
+
+[tasks.format]
+description = "Runs the cargo rustfmt plugin."
+install_crate = "rustfmt"
+command = "cargo"
+args = ["fmt", "--", "--write-mode=overwrite"]
+
+[tasks.my-flow]
+dependencies = [
+    "build",
+    "test"
+]

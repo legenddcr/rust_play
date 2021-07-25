@@ -1,0 +1,12 @@
+[tasks.docs]
+description = "Generate rust documentation"
+command = "cargo"
+args = ["doc", "--no-deps"]
+
+[tasks.copy-apidocs]
+description = "Copes the generated documentation to the docs/api directory."
+dependencies = ["docs"]
+script = [
+    "mkdir -p ./docs/api",
+    "mv ./target/doc/* ./docs/api"
+]
