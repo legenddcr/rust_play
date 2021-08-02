@@ -1,13 +1,13 @@
 use std::collections::HashMap;
-use std::ffi::OsString;
-use std::fmt;
-use std::fs::{self, File};
-use std::io::{self, Read, Write};
+use std::fs::{File};
+use std::io::{self, Read};
 use std::path::{Path, PathBuf};
 use std::str;
 use std::time::SystemTime;
 #[cfg(target_family = "unix")]
 use std::os::unix::fs::PermissionsExt;
+
+use xi_rope::Rope;
 
 // use serde::de::{self, Deserialize, Deserializer, Unexpected};
 // use serde::ser::{Serialize, Serializer};
@@ -149,8 +149,9 @@ mod tests {
         let id_counter = Counter::default();
         let buffer_id = BufferId(id_counter.next());
 
+        let rope = file_manager.open(path, buffer_id);
         // let rope = match path.as_ref() {
-        //     Some(p) => file_manager.open(p, buffer_id)?,
+        //     Some(p) => file_manager.open(p, buffer_id),
         //     None => Rope::from(""),
         // };
     }
