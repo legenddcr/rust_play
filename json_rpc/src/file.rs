@@ -139,9 +139,19 @@ impl FileManager {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::counter::utils::Counter;
 
     #[test]
     fn test_create_file_mananger() {
+        let path = "/test/test.txt";
         let file_manager = FileManager::new();
+
+        let id_counter = Counter::default();
+        let buffer_id = BufferId(id_counter.next());
+
+        // let rope = match path.as_ref() {
+        //     Some(p) => file_manager.open(p, buffer_id)?,
+        //     None => Rope::from(""),
+        // };
     }
 }
