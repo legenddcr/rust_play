@@ -1,6 +1,5 @@
 [workspace]
 members = [
     "async_test",
-    "json_rpc",
     "variables",
 ]
