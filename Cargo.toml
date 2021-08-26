@@ -2,4 +2,6 @@
 members = [
     "async_test",
     "variables",
+    "log_test",
+    "ropey_test",
 ]
