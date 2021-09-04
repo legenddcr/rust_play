@@ -4,4 +4,5 @@ members = [
     "variables",
     "log_test",
     "ropey_test",
+    "blog",
 ]
