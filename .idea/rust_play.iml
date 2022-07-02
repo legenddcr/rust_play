@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/variables/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/regex_test/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch03_scrap_url/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch03_grammar/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

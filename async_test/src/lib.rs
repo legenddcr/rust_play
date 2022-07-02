@@ -16,7 +16,7 @@ mod tests {
     use std::time::Duration;
 
     #[test]
-    fn test_aynsc_main() {
+    fn test_async_main() {
         let future = async_main();
         block_on(future);
     }
