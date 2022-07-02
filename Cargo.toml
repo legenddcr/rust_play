@@ -1,6 +1,11 @@
 [workspace]
 members = [
     "async_test",
-    "json_rpc",
     "variables",
+    "log_test",
+    "ropey_test",
+    "regex_test",
+    "blog",
+    "playground",
+    "ch03_scrap_url",
 ]
