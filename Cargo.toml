@@ -10,4 +10,5 @@ members = [
     "ch03_scrap_url",
     "ch03_grammar",
     "httpie",
+    "thumbor",
 ]
