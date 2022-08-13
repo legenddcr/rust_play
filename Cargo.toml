@@ -9,6 +9,7 @@ members = [
     "playground",
     "ch03_scrap_url",
     "ch03_grammar",
+    "ch10_strtok",
     "httpie",
     "thumbor",
 ]
